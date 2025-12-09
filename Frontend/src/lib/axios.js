@@ -1,6 +1,6 @@
 import axios from "axios";
 
 export const axiosInstance = axios.create({
-    baseURL:"http://localhost:3000/api",
+    baseURL:"https://talkup-server.onrender.com/api",
     withCredentials:true,
 })
