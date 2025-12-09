@@ -9,7 +9,7 @@ import cors from "cors";
 import {app,server} from "./src/lib/socket.js"
 dotenv.config();
 
-const port = 3000;
+const port = process.env.PORT;
 
 app.use(cors({
   origin: "https://talkup-a958.onrender.com",   
@@ -25,6 +25,6 @@ app.use("/api/messages",messageRoute)
 
 
 server.listen(port,()=>{
-    console.log("App listing on port:3000");
+    console.log("App listing on port:${PORT}");
     connectDb() 
 })   
