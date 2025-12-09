@@ -10,7 +10,7 @@ const server = http.createServer(app);
 
 const io = new Server(server, {
   cors: {
-    origin: ["https://talkup-server.onrender.com"],
+    origin: ["https://talkup-a958.onrender.com"],
     methods: ["GET", "POST"],
     credentials: true,
   },
