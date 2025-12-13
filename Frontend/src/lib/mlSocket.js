@@ -2,7 +2,7 @@ import { io } from "socket.io-client";
 
 // Export a lazy initializer for the ML Socket so importing this module
 // doesn't throw in non-browser environments or before window exists.
-const SOCKET_URL = process.env.VITE_ML_SOCKET_URL || "http://localhost:8000";
+const SOCKET_URL = "https://talkup-python-server.onrender.com";
 
 let socket = null;
 const createSocket = () => {
